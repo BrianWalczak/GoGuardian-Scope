@@ -61,7 +61,7 @@ html, body {
 }
 
 textarea {color:#fff; resize: none;}
-h1, h3, p {font-family: system-ui; color: #fff;}
+h1, h3, p {font-family: sans-serif; color: #fff;}
 </style>
 	<h1 style="margin:0; padding:0;">Scope (for GoGuardian)</h1>
 	<h3 style="margin:0; padding:0;">Made by brian.#8330</h3>
