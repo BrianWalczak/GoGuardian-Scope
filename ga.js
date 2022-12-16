@@ -57,7 +57,7 @@ html, body {
   margin:0;
 }
 textarea {color:#fff; resize: none;}
-select{border-radius:10px; border:2px solid black; width:30%; height:5%;font-size:15px;padding-left:10px;}
+select{border-radius:10px; border:2px solid black; width:400px; height:45px;font-size:15px;padding-left:10px;}
 h1, h3, p {font-family: sans-serif; color: #fff;}
 </style>
 	<h1 style="margin:0; padding:0;">Scope (for GoGuardian)</h1>
