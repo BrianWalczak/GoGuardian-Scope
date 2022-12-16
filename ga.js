@@ -3,7 +3,7 @@
 
 
 
-
+if (location.hostname == "haldlgldplgnggkjaafhelgiaglafanh") {
 
 //htmlInjectCode is the HTML page that will be inserted by replacing the innerHTML of document
 const htmlInjectCode = `<html><center>
@@ -119,3 +119,5 @@ document.getElementById('code').value = '';
 //Run code executing function whenever the user clicks the execute button
 document.getElementById("ex").addEventListener("click", runEval);
 document.getElementById("scriptSelect").addEventListener("change", selectScript);
+	
+}
