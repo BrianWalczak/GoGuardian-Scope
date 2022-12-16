@@ -105,11 +105,11 @@ function selectScript() {
 if(document.getElementById("scriptSelect").value != "none") {
 
 	if(document.getElementById("scriptSelect").value == "enableExtension") {
-		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, true)'
+		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n//You can find it by going to chrome://extensions, clicking on the "Details" under the extension, and finding the ID in the address bar \n\nchrome.management.setEnabled(extensionId, true)'
 	}
 	
 	if(document.getElementById("scriptSelect").value == "disableExtension") {
-		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, false)'
+		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n//You can find it by going to chrome://extensions, clicking on the "Details" under the extension, and finding the ID in the address bar \n\nchrome.management.setEnabled(extensionId, false)'
 	}
 }else{
 document.getElementById('code').value = '';
