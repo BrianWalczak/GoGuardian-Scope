@@ -41,6 +41,7 @@ html, body {
 	padding: 20px;
 	float: left;
 	background:#34495E;
+	border: 3px solid white;
 }
 
 #console {
@@ -49,6 +50,7 @@ html, body {
 	padding: 20px;
 	float: left;
 	background:#000;
+	border: 3px solid white;
 }
 
 #boxes {
@@ -57,7 +59,6 @@ html, body {
   overflow: auto;
 	padding:0;
   margin:0;
-	border: 3px solid white;
 }
 
 textarea {color:#fff; resize: none;}
