@@ -69,14 +69,13 @@ h1, h3, p {font-family: sans-serif; color: #fff;}
 	<textarea id="console" spellcheck="false" placeholder="Waiting for output..." disabled=""></textarea>
 	</div>
 	<br><br><hr><br><br>
-
 	<h1 style="margin:0; padding:0;">Useful Scripts</h1>
 	<h3 style="margin:0; padding:0;">Select a script from the dropdown below to use it!</h3>
 	<br>
 	<select id="scriptSelect">
-		<option value="0">Select a script...</option>
-		<option value="1">Enable any Chrome extension</option>
-		<option value="2">Disable any Chrome extension</option>
+		<option value="none">Select a script...</option>
+		<option value="enableExtension">Enable any Chrome extension</option>
+		<option value="disableExtension">Disable any Chrome extension</option>
 	</select>
 </center></html>`
 
@@ -104,7 +103,7 @@ function runEval() {
 
 function selectScript() {
 if(document.getElementById("scriptSelect").value != "none") {
-	
+
 	if(document.getElementById("scriptSelect").value == "enableExtension") {
 		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, true)'
 	}
