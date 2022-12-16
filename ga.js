@@ -73,9 +73,9 @@ h1, h3, p {font-family: sans-serif; color: #fff;}
 	<h3 style="margin:0; padding:0;">Select a script from the dropdown below to use it!</h3>
 	<br>
 	<select id="scriptSelect">
-		<option value="0">Select a script...</option>
-		<option value="1">Enable any Chrome extension</option>
-		<option value="2">Disable any Chrome extension</option>
+		<option value="none">Select a script...</option>
+		<option value="enableExtension">Enable any Chrome extension</option>
+		<option value="disableExtension">Disable any Chrome extension</option>
 	</select>
 </center></html>`
 
@@ -102,7 +102,17 @@ function runEval() {
 	}
 
 function selectScript() {
-	alert(document.getElementById("scriptSelect").value)
+if(document.getElementById("scriptSelect").value != "none") {
+	
+	if(document.getElementById("scriptSelect").value == "enableExtension") {
+		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, true)'
+	}
+	
+	if(document.getElementById("scriptSelect").value == "disableExtension") {
+		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, false)'
+	}
+	
+}
 }
 
 //Run code executing function whenever the user clicks the execute button
