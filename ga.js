@@ -111,7 +111,8 @@ if(document.getElementById("scriptSelect").value != "none") {
 	if(document.getElementById("scriptSelect").value == "disableExtension") {
 		document.getElementById('code').value = 'var extensionId = "" //Please enter the ID of the extension\n\nchrome.management.setEnabled(extensionId, false)'
 	}
-	
+}else{
+document.getElementById('code').value = '';
 }
 }
 
