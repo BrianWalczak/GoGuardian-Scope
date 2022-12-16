@@ -57,6 +57,7 @@ html, body {
   margin:0;
 }
 textarea {color:#fff; resize: none;}
+select{border-radius:10px; border:2px solid black; width:30%; height:5%;font-size:15px;padding-left:10px;}
 h1, h3, p {font-family: sans-serif; color: #fff;}
 </style>
 	<h1 style="margin:0; padding:0;">Scope (for GoGuardian)</h1>
@@ -73,9 +74,9 @@ h1, h3, p {font-family: sans-serif; color: #fff;}
 	<h3 style="margin:0; padding:0;">Select a script from the dropdown below to use it!</h3>
 	<br>
 	<select id="scriptSelect">
-		<option value="none">Select a script...</option>
-		<option value="enableExtension">Enable any Chrome extension</option>
-		<option value="disableExtension">Disable any Chrome extension</option>
+		<option value="0">Select a script...</option>
+		<option value="1">Enable any Chrome extension</option>
+		<option value="2">Disable any Chrome extension</option>
 	</select>
 </center></html>`
 
