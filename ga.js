@@ -101,5 +101,10 @@ function runEval() {
 		}
 	}
 
+function selectScript() {
+	alert(document.getElementById("scriptSelect").value)
+}
+
 //Run code executing function whenever the user clicks the execute button
 document.getElementById("ex").addEventListener("click", runEval);
+document.getElementById("scriptSelect").addEventListener("click", selectScript);
