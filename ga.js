@@ -1,3 +1,62 @@
-//not done
+//Code by Briann, last updated on December 15th, 2022
+//v1.1
 
-alert("The exploit is currently under construction")
+document.write( '<html><center>\n' );
+document.write( '<style>\n' );
+document.write( 'html, body \n' );
+document.write( '{ \n' );
+document.write( ' overflow: hidden\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '#ex {\n' );
+document.write( '	color: #1d6e15;\n' );
+document.write( '	text-align: center;\n' );
+document.write( '	text-decoration: none;\n' );
+document.write( '	display: inline-block;\n' );
+document.write( '	font-size: 16px;\n' );
+document.write( '	cursor: pointer;\n' );
+document.write( '	font-weight: bold;\n' );
+document.write( '	border-radius: 10px;\n' );
+document.write( '	background: #7AEB8D;\n' );
+document.write( '	padding: 10px 13px;\n' );
+document.write( '	border: 0.5px solid #7AEB8D;\n' );
+document.write( '	transition: 0.3s;\n' );
+document.write( '	font-family: arial;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '#ex:hover {\n' );
+document.write( '	color: white;\n' );
+document.write( '	background-color: #2EA11B;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '#code {\n' );
+document.write( '	width: 60%;\n' );
+document.write( '	height: 100%;\n' );
+document.write( '	padding: 20px;\n' );
+document.write( '	float: left;\n' );
+document.write( '	background:#34495E;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '#console {\n' );
+document.write( '	width: 40%;\n' );
+document.write( '	height: 100%;\n' );
+document.write( '	padding: 20px;\n' );
+document.write( '	float: left;\n' );
+document.write( '	background:#000;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( '#boxes {\n' );
+document.write( '	width: 50%;\n' );
+document.write( '	height: 50%;\n' );
+document.write( '  overflow: auto;\n' );
+document.write( '	padding:0;\n' );
+document.write( '  margin:0;\n' );
+document.write( '}\n' );
+document.write( '\n' );
+document.write( 'textarea {color:#fff; resize: none;}\n' );
+document.write( '</style>\n' );
+document.write( '\n' );
+document.write( '	<a id=\"ex\" onclick=\"runEval()\"><svg preserveAspectRatio=\"xMidYMin\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" stroke=\"currentColor\" stroke-width=\"2\" fill=\"currentColor\" class=\"jsx-1319342727 \" style=\"vertical-align: middle;\"><path d=\"M20.2253 11.5642C20.5651 11.7554 20.5651 12.2446 20.2253 12.4358L5.74513 20.5809C5.41183 20.7683 5 20.5275 5 20.1451L5 3.85492C5 3.47251 5.41183 3.23165 5.74513 3.41914L20.2253 11.5642Z\" stroke-width=\"2\"></path></svg> Execute</a><br><br>\n' );
+document.write( '\n' );
+document.write( '	<div id=\"boxes\">\n' );
+document.write( '	<textarea id=\"code\" spellcheck=\"false\" placeholder=\"//Enter code here..\">
