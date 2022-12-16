@@ -42,6 +42,7 @@ html, body {
 	float: left;
 	background:#34495E;
 	border: 3px solid white;
+	border-right: 1.5px solid white;
 }
 
 #console {
@@ -51,6 +52,7 @@ html, body {
 	float: left;
 	background:#000;
 	border: 3px solid white;
+	border-left: 1.5px solid white;
 }
 
 #boxes {
